@@ -9,8 +9,8 @@ export class DataLambda extends Construct {
 
     this.lambda = new Function(this, 'dataLambda', {
       runtime: Runtime.NODEJS_14_X,
-      code: Code.fromAsset('lib/lambda-dataLambda'),
-      handler: 'code.handler',
+      code: Code.fromAsset('lib/lambda'),
+      handler: 'surfdata.handler',
     });
   }
 }
